@@ -1,0 +1,19 @@
+memlab version
+
+memlab get-default-work-dir
+
+memlab run --scenario hello.js
+
+memlab run --scenario hello.js --headful
+
+memlab find-leaks --trace-all-objects
+
+memlab reset 
+
+memlab warmup --scenario hello.js
+
+memlab run --scenario hello.js --headful --device iPad
+
+memlab run --scenario hello.js --headful --ml-clustering #default is heuristics
+
+memlab snapshot --scenario hello.js --headful --work-dir /tmp/memlab-heap
